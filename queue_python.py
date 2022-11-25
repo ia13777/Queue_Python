@@ -45,11 +45,43 @@ def remove() :
     #data entry
 
 
-add('a');
-add('l');
 add('i');
+add('r');
+add('v');
+add('i');
+add('n');
+add('g');
+print('\n',container, '\n \n');
+
+
 
     #data searching
+
+#convert to all uppercase
+def convertUpper() :
+    #pointers
+    Head = 0;
+    Tail = len(container)-1;
+    UpperContainer = [];
+    
+    while len(container) > 0 :
+        if container[Head].islower() == True :
+            UpperContainer.append(container[Head].upper());
+            container.remove(container[Head]);
+        else :
+            UpperContainer.append(container[Head]);
+            container.remove(container[Head]);
+    
+    print('Converting lower case character to upper case : \n');
+    print(UpperContainer);
+
+
+    return None;
+
+    
+#execution
+
+convertUpper();
 
 
 #
